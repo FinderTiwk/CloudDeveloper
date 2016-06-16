@@ -1,0 +1,39 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - FBAllocationTracker (0.1.5)
+  - FBMemoryProfiler (0.1.3):
+    - FBAllocationTracker (~> 0.1)
+    - FBRetainCycleDetector (~> 0.1)
+  - FBRetainCycleDetector (0.1.2)
+  - HyphenateFullSDK (3.1.3)
+  - IQKeyboardManager (4.0.3)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - FBMemoryProfiler
+  - HyphenateFullSDK (~> 3.1.3)
+  - IQKeyboardManager
+  - ReactiveCocoa (= 2.5)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
+  FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
+  FBRetainCycleDetector: 45462f9ed1af0cd77224a4cc4e6dacaca47371b4
+  HyphenateFullSDK: 8b5b092055480308a47c9bb9b78baed7f45f7713
+  IQKeyboardManager: be9695ffc5a52077deb4847608f338771022d6d1
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: dcab971bcd07efe344fd2f870f90dee6521235e0
+
+COCOAPODS: 1.0.0
