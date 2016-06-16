@@ -17,4 +17,7 @@
 /*! 是否记住用户名密码*/
 @property (nonatomic,assign) BOOL rememberAccount;
 
+/*! 是否已经记住了用户名密码*/
+@property (nonatomic,assign) BOOL rememberSwitchOn;
+
 @end

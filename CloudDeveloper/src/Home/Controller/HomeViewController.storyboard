@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F9C-Hh-qw7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F9C-Hh-qw7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fFf-p5-YIX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gL4-hW-mC9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WEB-RW-I3z">
@@ -87,18 +87,18 @@
                                                     <exclude reference="bVD-nG-dej"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="Ttc-5n-kfQ"/>
-                                                    <exclude reference="es7-pD-0jU"/>
+                                                    <exclude reference="9th-DQ-lwO"/>
+                                                    <exclude reference="MMR-DV-T8v"/>
+                                                    <exclude reference="oRg-O6-A2f"/>
+                                                    <exclude reference="xXv-gF-Ygv"/>
                                                     <exclude reference="EHm-d2-lPn"/>
                                                     <exclude reference="Olb-C2-XNC"/>
                                                     <exclude reference="Wkz-Qm-Q2F"/>
                                                     <exclude reference="cvR-IW-C8N"/>
                                                     <exclude reference="qUn-Lx-Pjv"/>
                                                     <exclude reference="yub-gy-sKn"/>
-                                                    <exclude reference="9th-DQ-lwO"/>
-                                                    <exclude reference="MMR-DV-T8v"/>
-                                                    <exclude reference="oRg-O6-A2f"/>
-                                                    <exclude reference="xXv-gF-Ygv"/>
+                                                    <exclude reference="Ttc-5n-kfQ"/>
+                                                    <exclude reference="es7-pD-0jU"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -108,18 +108,18 @@
                                                     <include reference="bVD-nG-dej"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="Ttc-5n-kfQ"/>
-                                                    <include reference="es7-pD-0jU"/>
+                                                    <include reference="9th-DQ-lwO"/>
+                                                    <include reference="MMR-DV-T8v"/>
+                                                    <include reference="oRg-O6-A2f"/>
+                                                    <include reference="xXv-gF-Ygv"/>
                                                     <exclude reference="EHm-d2-lPn"/>
                                                     <include reference="Olb-C2-XNC"/>
                                                     <include reference="Wkz-Qm-Q2F"/>
                                                     <exclude reference="cvR-IW-C8N"/>
                                                     <include reference="qUn-Lx-Pjv"/>
                                                     <include reference="yub-gy-sKn"/>
-                                                    <include reference="9th-DQ-lwO"/>
-                                                    <include reference="MMR-DV-T8v"/>
-                                                    <include reference="oRg-O6-A2f"/>
-                                                    <include reference="xXv-gF-Ygv"/>
+                                                    <include reference="Ttc-5n-kfQ"/>
+                                                    <include reference="es7-pD-0jU"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -173,7 +173,7 @@
                     <navigationItem key="navigationItem" title="好友列表" id="d5z-2c-vtD">
                         <barButtonItem key="rightBarButtonItem" id="TuR-UD-iQs">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="zxs-ej-8hM">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -201,7 +201,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vpC-er-Tg6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V20-LH-qpt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要添加的好友账号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-eN-je4">
@@ -469,7 +469,6 @@
                                 <exclude reference="s5I-4n-4vH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="yH1-gP-bdr"/>
                                 <exclude reference="FU4-XB-WU9"/>
                                 <exclude reference="IUm-2a-8FO"/>
                                 <exclude reference="osJ-7x-RMj"/>
@@ -478,6 +477,7 @@
                                 <exclude reference="NWf-31-eF6"/>
                                 <exclude reference="fNe-Gq-OGA"/>
                                 <exclude reference="vKB-sY-skp"/>
+                                <exclude reference="yH1-gP-bdr"/>
                                 <exclude reference="A5v-8y-9cc"/>
                                 <exclude reference="MpL-yi-bPE"/>
                                 <exclude reference="a0a-CI-ufB"/>
@@ -495,7 +495,6 @@
                                 <include reference="s5I-4n-4vH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="yH1-gP-bdr"/>
                                 <include reference="FU4-XB-WU9"/>
                                 <include reference="IUm-2a-8FO"/>
                                 <include reference="osJ-7x-RMj"/>
@@ -504,6 +503,7 @@
                                 <include reference="NWf-31-eF6"/>
                                 <include reference="fNe-Gq-OGA"/>
                                 <include reference="vKB-sY-skp"/>
+                                <include reference="yH1-gP-bdr"/>
                                 <include reference="A5v-8y-9cc"/>
                                 <include reference="MpL-yi-bPE"/>
                                 <include reference="a0a-CI-ufB"/>
@@ -532,7 +532,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uDY-0e-w2t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B8K-xy-Xvk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-NI-tHW">
@@ -601,7 +601,7 @@
         <!--第一个导航栏-->
         <scene sceneID="BWd-DU-hF1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QoJ-Yw-aPh" userLabel="第一个导航栏" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QoJ-Yw-aPh" userLabel="第一个导航栏" customClass="XBaseNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" badgeValue="99" systemItem="mostViewed" id="iHe-bn-IKK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Try-KT-8Ap">
@@ -631,7 +631,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FzS-hB-TM8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oaf-r4-DUJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzU-Jo-Wm7">
@@ -719,19 +719,19 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="9yt-fa-brQ"/>
-                                        <exclude reference="gzc-mv-8ac"/>
-                                        <exclude reference="mYP-ue-br6"/>
-                                        <exclude reference="nsb-MT-tlm"/>
-                                        <exclude reference="Hck-GS-kPV"/>
-                                        <exclude reference="XgW-G0-xJv"/>
                                         <exclude reference="DKH-hB-3g7"/>
                                         <exclude reference="Fef-fO-63w"/>
                                         <exclude reference="YRH-na-9Ha"/>
                                         <exclude reference="eLU-dT-MVU"/>
+                                        <exclude reference="gzc-mv-8ac"/>
+                                        <exclude reference="mYP-ue-br6"/>
+                                        <exclude reference="nsb-MT-tlm"/>
                                         <exclude reference="N5V-gt-bjo"/>
                                         <exclude reference="aHh-Yu-Xkb"/>
                                         <exclude reference="e4P-NF-q0P"/>
                                         <exclude reference="qnj-2e-AEC"/>
+                                        <exclude reference="Hck-GS-kPV"/>
+                                        <exclude reference="XgW-G0-xJv"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -743,19 +743,19 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="9yt-fa-brQ"/>
-                                        <exclude reference="gzc-mv-8ac"/>
-                                        <include reference="mYP-ue-br6"/>
-                                        <include reference="nsb-MT-tlm"/>
-                                        <include reference="Hck-GS-kPV"/>
-                                        <include reference="XgW-G0-xJv"/>
                                         <include reference="DKH-hB-3g7"/>
                                         <include reference="Fef-fO-63w"/>
                                         <include reference="YRH-na-9Ha"/>
                                         <include reference="eLU-dT-MVU"/>
+                                        <exclude reference="gzc-mv-8ac"/>
+                                        <include reference="mYP-ue-br6"/>
+                                        <include reference="nsb-MT-tlm"/>
                                         <include reference="N5V-gt-bjo"/>
                                         <include reference="aHh-Yu-Xkb"/>
                                         <exclude reference="e4P-NF-q0P"/>
                                         <exclude reference="qnj-2e-AEC"/>
+                                        <include reference="Hck-GS-kPV"/>
+                                        <include reference="XgW-G0-xJv"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -833,13 +833,13 @@
                                 <exclude reference="zPb-FO-Oij"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="u6y-YU-eSz"/>
                                 <exclude reference="Dsi-hs-hMO"/>
                                 <exclude reference="Fqg-Xp-5dV"/>
                                 <exclude reference="rqH-xp-yFM"/>
                                 <exclude reference="v3N-uY-mdp"/>
                                 <exclude reference="wR6-zA-vpa"/>
                                 <exclude reference="y8x-UZ-lif"/>
+                                <exclude reference="u6y-YU-eSz"/>
                                 <exclude reference="0m6-cQ-XTC"/>
                                 <exclude reference="1u4-SB-TQh"/>
                                 <exclude reference="dPZ-Ms-99y"/>
@@ -852,13 +852,13 @@
                                 <include reference="zPb-FO-Oij"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="u6y-YU-eSz"/>
                                 <include reference="Dsi-hs-hMO"/>
                                 <include reference="Fqg-Xp-5dV"/>
                                 <include reference="rqH-xp-yFM"/>
                                 <include reference="v3N-uY-mdp"/>
                                 <include reference="wR6-zA-vpa"/>
                                 <include reference="y8x-UZ-lif"/>
+                                <include reference="u6y-YU-eSz"/>
                                 <include reference="0m6-cQ-XTC"/>
                                 <include reference="1u4-SB-TQh"/>
                                 <include reference="dPZ-Ms-99y"/>
@@ -881,7 +881,7 @@
         <!--第二个导航栏-->
         <scene sceneID="Fdi-tE-llY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="0py-mn-fN3" userLabel="第二个导航栏" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0py-mn-fN3" userLabel="第二个导航栏" customClass="XBaseNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="8rS-dJ-5eI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="CtT-Jg-W2v">
@@ -905,7 +905,7 @@
         <!--第三个导航栏-->
         <scene sceneID="ttY-Ru-ubb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jsb-L6-7xJ" userLabel="第三个导航栏" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jsb-L6-7xJ" userLabel="第三个导航栏" customClass="XBaseNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="featured" id="Whc-aZ-rc4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="b2N-6c-Jix">

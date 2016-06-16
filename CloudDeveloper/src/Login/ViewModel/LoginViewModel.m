@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewModel.h"
 
+#import "RedPacketUserConfig.h"
+
 static NSString *const kRememberAccountKey = @"kRememberAccountKey";
 static NSString *const kRememberPasswordKey = @"kRememberPasswordKey";
 
@@ -93,6 +95,7 @@ static NSString *const kRememberPasswordKey = @"kRememberPasswordKey";
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [[RACScheduler scheduler] schedule:^{
             EMError *error = [[EMClient sharedClient] loginWithUsername:self.account password:self.password];
+            
             [[RACScheduler mainThreadScheduler] schedule:^{
                 if (error) {
                     [subscriber sendError:[NSError errorWithDomain:@"com.fanhua.www" code:-1 userInfo:@{@"message":error.errorDescription}]];
@@ -111,14 +114,22 @@ static NSString *const kRememberPasswordKey = @"kRememberPasswordKey";
 }
 
 - (void)remember{
+    [[RedPacketUserConfig sharedConfig] configWithImUserId:self.account andImUserPass:self.password];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (self.rememberAccount) {
-        NSLog(@"记住用户名密码");
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setValue:self.account forKey:kRememberAccountKey];
         [defaults setValue:self.password forKey:kRememberPasswordKey];
-        [defaults synchronize];
+    }else{
+        [defaults removeObjectForKey:kRememberAccountKey];
+        [defaults removeObjectForKey:kRememberPasswordKey];
     }
+    [defaults synchronize];
 }
 
+
+- (BOOL)rememberSwitchOn{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return isStringWithAnyText([defaults valueForKey:kRememberAccountKey]);
+}
 
 @end

@@ -10,6 +10,9 @@
 #import "XFirendsViewModel.h"
 #import "XFirendCell.h"
 
+#import "RedPacketChatViewController.h"
+
+
 @interface XFirendsViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,EMContactManagerDelegate>
 
 @property (nonatomic,strong) XFirendsViewModel *viewModel;
@@ -124,6 +127,20 @@
 
 
 #pragma mark - UITableViewDelegate
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    XFirend *firend =  self.viewModel.firendsList[indexPath.row];
+    
+    RedPacketChatViewController *controller = [[RedPacketChatViewController alloc] initWithConversationChatter:firend.account conversationType:EMConversationTypeChat];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60.0;
 }

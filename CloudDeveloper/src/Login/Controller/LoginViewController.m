@@ -34,6 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _rememberSwitch.on = self.viewModel.rememberSwitchOn;
+    
     _accountField.text  = self.viewModel.account;
     _passwordField.text = self.viewModel.password;
     

@@ -8,6 +8,7 @@
 
 #import "XFirendsViewModel.h"
 
+
 NSString *const kAddReuqestKey = @"addReuqestKey";
 
 @interface XFirendsViewModel ()
@@ -161,8 +162,6 @@ NSString *const kAddReuqestKey = @"addReuqestKey";
         return nil;
     }];
 }
-
-
 
 @end
 

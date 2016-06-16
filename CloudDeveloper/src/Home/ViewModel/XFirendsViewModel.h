@@ -23,7 +23,6 @@ UIKIT_EXTERN NSString *const kAddReuqestKey;
 - (void)deleteFirend:(XFirend *)firend complete:(void(^)())complete;
 - (void)deleteFirendAtIndex:(NSUInteger)index complete:(void(^)())complete;
 
-
 #pragma mark - 好友申请在本地的缓存处理
 - (void)saveAddRequestWithAccount:(NSString *)account message:(NSString *)message;
 

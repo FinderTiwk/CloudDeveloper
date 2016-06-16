@@ -20,6 +20,8 @@
 
 /*! 环信SDK*/
 #import "EMClient.h"
+#import "EaseUI.h"
+
 
 /*! SVProgressHUD*/
 #import "SVProgressHUD.h"

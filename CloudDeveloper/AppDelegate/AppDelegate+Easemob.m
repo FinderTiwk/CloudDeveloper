@@ -8,6 +8,7 @@
 
 #import "AppDelegate+Easemob.h"
 #import "EMSDK.h"
+#import "RedPacketUserConfig.h"
 
 static NSString *const kEASEMOBAPP_KEY = @"huafan#clouddeveloper";
 
@@ -17,7 +18,9 @@ static NSString *const kEASEMOBAPP_KEY = @"huafan#clouddeveloper";
     //AppKey:注册的appKey，详细见下面注释。
     //apnsCertName:推送证书名(不需要加后缀)，详细见下面注释。
     EMOptions *options = [EMOptions optionsWithAppkey:kEASEMOBAPP_KEY];
-//    options.enableConsoleLog = YES;
+    
+    [[RedPacketUserConfig sharedConfig] configWithAppKey:kEASEMOBAPP_KEY];
+    options.enableConsoleLog = YES;
     [[EMClient sharedClient] initializeSDKWithOptions:options];
 }
 
