@@ -15,7 +15,6 @@
 #import "RedPacketUserConfig.h"
 #import "RedpacketOpenConst.h"
 #import "YZHRedpacketBridge.h"
-#import "ChatDemoHelper.h"
 
 /**
  *  红包聊天窗口

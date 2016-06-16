@@ -9,8 +9,6 @@
 #import "RedPacketUserConfig.h"
 #import "YZHRedpacketBridge.h"
 #import "RedpacketMessageModel.h"
-#import "ChatDemoHelper.h"
-
 
 static RedPacketUserConfig *__sharedConfig__ = nil;
 
@@ -121,68 +119,14 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
 
 #pragma mark - YZHRedpacketBridgeDelegate
 
-/**
- *  环信Token过期后的回调
- */
-- (void)redpacketUserTokenGetInfoByMethod:(RequestTokenMethod)method
-{
-    [self configUserToken:YES];
-}
-
 #pragma mark - 
 #pragma mark 用户登录状态监控
 
-//  监测用户登录状态
-- (void)userLoginChanged:(NSNotification *)notifaction
-{
-    BOOL isLoginSuccess = [[notifaction object] boolValue];
-    if (isLoginSuccess) {
-        [self configUserToken:NO];
-        
-    }else  {
-        //  用户退出，清除数据
-        [self clearUserInfo];
-    }
-}
-
-- (void)configUserToken:(BOOL)isRefresh
-{
-    if (![EMClient sharedClient].isLoggedIn) {
-        return;
-    }
-    
-    NSString *userToken = nil;
-    if ([[EMClient sharedClient] respondsToSelector:@selector(getUserToken:)]) {
-        userToken = [[EMClient sharedClient] performSelector:@selector(getUserToken:) withObject:@(isRefresh)];
-    }
-    
-    NSString *userId = self.redpacketUserInfo.userId;
-    if (userToken.length) {
-        [[YZHRedpacketBridge sharedBridge] configWithAppKey:_dealerAppKey
-                                                  appUserId:userId
-                                                    imToken:userToken];
-    }else {
-        [[YZHRedpacketBridge sharedBridge] configWithAppKey:_dealerAppKey
-                                                  appUserId:userId
-                                                   imUserId:userId
-                                              andImUserpass:_imUserPass];
-    }
-}
-
-- (void)didLoginFromOtherDevice
-{
+- (void)didLoginFromOtherDevice{
     [self clearUserInfo];
 }
 
-- (void)didAutoLoginWithError:(EMError *)aError
-{
-    if (!aError) {
-        [self configUserToken:NO];
-    }
-}
-
-- (void)clearUserInfo
-{
+- (void)clearUserInfo{
     [[YZHRedpacketBridge sharedBridge] redpacketUserLoginOut];
     _imUserId = nil;
 }
@@ -270,26 +214,7 @@ static RedPacketUserConfig *__sharedConfig__ = nil;
                     /**
                      *  存入当前会话并存入数据库
                      */
-                    [self.chatVC.conversation insertMessage:textMessage];
-                    
-                }else {
-                    /**
-                     *  插入数据库
-                     */
-                    ConversationListController *listVc = [ChatDemoHelper shareHelper].conversationListVC;
-                    if (listVc) {
-                        for (id <IConversationModel> model in [listVc.dataArray copy]) {
-                            EMConversation *conversation = model.conversation;
-                            if ([conversation.conversationId isEqualToString:textMessage.conversationId]) {
-                                [conversation insertMessage:textMessage];
-                            }
-                        }
-                        
-                        [listVc refresh];
-                        
-                    }else {
-                        [[EMClient sharedClient].chatManager importMessages:@[textMessage]];
-                    }
+                    [self.chatVC.conversation insertMessage:textMessage];   
                 }
             }
         }

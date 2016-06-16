@@ -114,7 +114,10 @@ static NSString *const kRememberPasswordKey = @"kRememberPasswordKey";
 }
 
 - (void)remember{
+
+    
     [[RedPacketUserConfig sharedConfig] configWithImUserId:self.account andImUserPass:self.password];
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (self.rememberAccount) {
         [defaults setValue:self.account forKey:kRememberAccountKey];

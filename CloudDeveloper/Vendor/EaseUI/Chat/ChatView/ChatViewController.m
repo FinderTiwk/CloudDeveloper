@@ -11,7 +11,6 @@
  */
 
 #import "ChatViewController.h"
-#import "ChatDemoHelper.h"
 
 @interface ChatViewController ()<UIAlertViewDelegate,EMClientDelegate>
 {
@@ -168,7 +167,6 @@
 {
     [[EMClient sharedClient].chatManager removeDelegate:self];
     [[EMClient sharedClient].roomManager removeDelegate:self];
-    [[ChatDemoHelper shareHelper] setChatVC:nil];
     
     if (self.deleteConversationIfNull) {
         //判断当前会话是否为空，若符合则删除该会话

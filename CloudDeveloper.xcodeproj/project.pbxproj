@@ -171,7 +171,6 @@
 		1DEB6C611D12B19A00619C23 /* RedPacketResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DEB6C551D12B19A00619C23 /* RedPacketResource.bundle */; };
 		1DEB6C6A1D12B1F400619C23 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB6C661D12B1F400619C23 /* ConversationListController.m */; };
 		1DEB6C6B1D12B1F400619C23 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB6C691D12B1F400619C23 /* ChatViewController.m */; };
-		1DEB6C791D12B35800619C23 /* ChatDemoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB6C781D12B35800619C23 /* ChatDemoHelper.m */; };
 		1DEB6C7C1D130E4700619C23 /* XBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB6C7B1D130E4700619C23 /* XBaseNavigationController.m */; };
 		1DFFEB671CBD53B000E987D9 /* XAddFirendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFEB661CBD53B000E987D9 /* XAddFirendController.m */; };
 		1DFFEB6A1CBD542400E987D9 /* XAddFirendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFEB691CBD542400E987D9 /* XAddFirendViewModel.m */; };
@@ -538,8 +537,6 @@
 		1DEB6C661D12B1F400619C23 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
 		1DEB6C681D12B1F400619C23 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		1DEB6C691D12B1F400619C23 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
-		1DEB6C771D12B35800619C23 /* ChatDemoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDemoHelper.h; sourceTree = "<group>"; };
-		1DEB6C781D12B35800619C23 /* ChatDemoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDemoHelper.m; sourceTree = "<group>"; };
 		1DEB6C7A1D130E4700619C23 /* XBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBaseNavigationController.h; sourceTree = "<group>"; };
 		1DEB6C7B1D130E4700619C23 /* XBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBaseNavigationController.m; sourceTree = "<group>"; };
 		1DFFEB651CBD53B000E987D9 /* XAddFirendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAddFirendController.h; sourceTree = "<group>"; };
@@ -825,8 +822,6 @@
 		1DEB6A9E1D12ACC600619C23 /* EaseUI */ = {
 			isa = PBXGroup;
 			children = (
-				1DEB6C771D12B35800619C23 /* ChatDemoHelper.h */,
-				1DEB6C781D12B35800619C23 /* ChatDemoHelper.m */,
 				1DEB6C631D12B1F400619C23 /* Chat */,
 				1DEB6A9F1D12ACC600619C23 /* EaseUI.h */,
 				1DEB6AA01D12ACC600619C23 /* EaseUI.m */,
@@ -1731,7 +1726,6 @@
 				1DEB6BDE1D12ACC600619C23 /* MJRefreshGifHeader.m in Sources */,
 				1DEB6C001D12ACC600619C23 /* PSTCollectionView.m in Sources */,
 				1DEB6BFA1D12ACC600619C23 /* UIImage+EMMultiFormat.m in Sources */,
-				1DEB6C791D12B35800619C23 /* ChatDemoHelper.m in Sources */,
 				1DEB6C5C1D12B19A00619C23 /* RedpacketMessageCell.m in Sources */,
 				1DEB6BC91D12ACC600619C23 /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				1DEB6C351D12ACC600619C23 /* EaseFaceView.m in Sources */,
