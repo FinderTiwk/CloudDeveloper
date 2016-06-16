@@ -534,7 +534,6 @@
 		1DEB6C551D12B19A00619C23 /* RedPacketResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RedPacketResource.bundle; sourceTree = "<group>"; };
 		1DEB6C561D12B19A00619C23 /* YZHRedpacketBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRedpacketBridge.h; sourceTree = "<group>"; };
 		1DEB6C571D12B19A00619C23 /* YZHRedpacketBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRedpacketBridgeProtocol.h; sourceTree = "<group>"; };
-		1DEB6C581D12B19A00619C23 /* 环信红包3.x接入文档(iOS).md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "环信红包3.x接入文档(iOS).md"; sourceTree = "<group>"; };
 		1DEB6C651D12B1F400619C23 /* ConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListController.h; sourceTree = "<group>"; };
 		1DEB6C661D12B1F400619C23 /* ConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListController.m; sourceTree = "<group>"; };
 		1DEB6C681D12B1F400619C23 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -1410,7 +1409,6 @@
 			children = (
 				1DEB6C3C1D12B19A00619C23 /* RedpacketOpen */,
 				1DEB6C4D1D12B19A00619C23 /* RedpacketStaticLib */,
-				1DEB6C581D12B19A00619C23 /* 环信红包3.x接入文档(iOS).md */,
 			);
 			path = RedpacketSDK;
 			sourceTree = "<group>";
